@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.example.administrator.project_meitu.Widget.MyView
+            android:id="@+id/myview"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/red_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/holo_red_light" />
+
+            <View
+                android:id="@+id/blue_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:background="@android:color/holo_blue_light" />
+
+            <View
+                android:id="@+id/black_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:background="@android:color/black" />
+
+            <View
+                android:id="@+id/green_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:background="@android:color/holo_green_light" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/sizeprogress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="1"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:max="50"
+            android:progress="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:onClick="back"
+                android:text="撤销" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:onClick="clear"
+                android:text="清除" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:onClick="save"
+                android:text="保存" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

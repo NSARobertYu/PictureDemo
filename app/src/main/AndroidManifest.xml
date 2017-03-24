@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.project_meitu">
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mtxx_icon_table"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activitys.CameraActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activitys.GalleryActivity" />
+        <activity android:name=".Activitys.DuodianchukongActivity" />
+        <activity android:name=".Activitys.CaijianActivity" />
+        <activity android:name=".Activitys.RotationActivity" />
+        <activity android:name=".Activitys.FanzhuanActivity" />
+        <activity android:name=".Activitys.BiankuangActivity" />
+        <activity android:name=".Activitys.HuaBanActivity" />
+        <activity android:name=".Activitys.PintuActivity" />
+        <activity android:name=".Activitys.ShuiYinActivity" />
+        <activity android:name=".Activitys.RecPictrueActivity" />
+        <activity android:name=".Activitys.SavePicActivity" />
+    </application>
+
+</manifest>
